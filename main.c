@@ -16,7 +16,7 @@ void solution() {
 }
 
 int max_index(int arr[]) {
-    int max = 0, k = 0;
+    int max = -10e6, k = -1;
     for (int i = 1; i <= n; i++) {
         if (arr[i] > max) {
             max = arr[i];

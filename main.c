@@ -28,13 +28,13 @@ int max_index(int arr[]) {
 
 int empty(int arr[]) {
     for (int i = 0; i <= n; i++) {
-        if (arr[i] != 0) return 1;
+        if (arr[i] != 0) return 0;
     }
-    return 0;
+    return 1;
 }
 
 void Greedy() {
-    while(empty(p) == 1) {
+    while(empty(p) == 0) {
         kmax = max_index(p);
         if (r[d[kmax]] == 0) {
             r[d[kmax]] = p[kmax];

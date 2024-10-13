@@ -40,7 +40,7 @@ void Greedy() {
             r[d[kmax]] = p[kmax];
             worked[d[kmax]] = kmax;
         } else {
-            for (int j = d[kmax]; j >= 0; j --){
+            for (int j = d[kmax]; j > 0; j --){
                 if (r[j] == 0) {
                     r[j] = p[kmax];
                     worked[j] = kmax;

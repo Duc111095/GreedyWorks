@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int n;
-int d[7];
-int p[7];
-int r[7];
-int worked[6];
+int d[100000];
+int p[100000];
+int r[100000];
+int worked[100000];
 int kmax;
 
 void solution() {
